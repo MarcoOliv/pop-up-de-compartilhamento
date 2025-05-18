@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop-up de Compartilhamento</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/script.js" defer></script>
+</head>
+<body>
+    <div class="pagina">
+        <div class="box">
+            <div class="close"><button type="button"><img class="fechar" src="assets/img/svg_close.png.png"></button></div>
+            <div class="header">
+                <h2>Compartilhe esse desafio</h4>
+            </div>
+            <div class="info">
+                Compartilhe esse desafio com seus amigos e fomente a colaboração! Clique para compartilhar e espalhar a notícia.
+            </div>
+            <div class="link">
+                <input id="link" type="text" placeholder="Clique para copiar" value="https://app.futurodevacademy.com/challenges/2496188d-4499-491b-85d8-e35226b7d194" readonly>
+                <button type="button" onclick="copiarLink()">Copiar</button>
+            </div>
+            <div class="botoes">
+                <button type="button" id="github" onclick="compartilhar('github')"><img src="assets/img/svg_github.png.png"></button>
+                <button type="button" id="linkedin" onclick="compartilhar('linkedin')"><img src="assets/img/svg_linkedin.png.png"></button>
+                <button type="button" id="instagram" onclick="compartilhar('instagram')"><img src="assets/img/svg_instagram_(1).png.png"></button>
+                <button type="button" id="whatsapp" onclick="compartilhar('whatsapp')"><img src="assets/img/svg_whatsapp.png.png"></button>
+                <button type="button" id="pinterest" onclick="compartilhar('pinterest')"><img src="assets/img/svg_pinterest.png.png"></button>
+                <button type="button" id="stackoverflow" onclick="compartilhar('stackoverflow')"><img src="assets/img/svg_stackoverflow.png.png"></button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
